@@ -1,24 +1,24 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
-import ProfileBox from "@/components/ProfileBox";
+import FrameBox from "@/components/FrameBox";
 
 export const metadata: Metadata = {
   title:
     "PostCreator",
-  description: "This is Next.js Profile page for PostCreator Dashboard Kit",
+  description: "This is Next.js Frame page for PostCreator Dashboard Kit",
 };
 
-const Profile = () => {
+const Frames = () => {
   return (
     <DefaultLayout>
       <div className="mx-auto w-full">
-        <Breadcrumb pageName="Profile" />
+        <Breadcrumb pageName="Frames" />
 
-        <ProfileBox />
+        <FrameBox />
       </div>
     </DefaultLayout>
   );
 };
 
-export default Profile;
+export default Frames;
